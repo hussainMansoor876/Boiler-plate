@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: #e9ebee !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    --antd-wave-shadow-color: none !important;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0ee;
+    width: 35%;
+    padding: 40px 30px 20px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    /* margin: 50px 0 10px; */
+}
+
+.google-login {
+    margin: 10px 0 !important;
+    border-radius: 4px !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    line-height: 1.5715 !important;
+    height: 32px !important;
+}
+
+.card-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.break-line {
+    border-top: 0.5px solid #0000003a;
+    margin: 0 -30px;
+}
+
+.setting-heading {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.head-center {
+    text-align: center;
+}
+
+.form-input {
+    border-radius: 4px !important;
+}
+
+.form-button {
+    border-radius: 4px !important;
+    /* background-color: #4bb146 !important; */
+    color: #ffffff !important;
+    /* border: 1px solid #4bb146; */
+}
+
+.menu-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.helper-comp {
+    position: relative;
+    width: 100%;
+}
+
+.home-main {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.form-button:hover {
+    border-color: #4bb146 !important;
+}
+
+@media(max-width: 1200px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media(max-width: 900px) {
+    .card {
+        width: 65%;
+    }
+}
+
+@media(max-width: 800px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media(max-width: 700px) {
+    .card {
+        width: 75%;
+    }
+}
+
+@media(max-width: 600px) {
+    .card {
+        width: 80%;
+        padding: 20px 20px 10px;
+    }
+    .break-line {
+        margin: 0 -20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .card {
+        width: 85%;
+    }
+    .heading {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media(max-width: 300px) {
+    .card {
+        width: 95%;
+    }
+    .heading {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nodebackend",
+  "version": "1.0.0",
+  "description": "\u0016Node.js Rest Apis",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "client": "npm start --prefix ./client && npm start --prefix client"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-prometheus-middleware": "^0.9.6",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.14",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "socket.io": "^3.1.0",
+    "uuid": "^8.3.0"
+  }
+}
