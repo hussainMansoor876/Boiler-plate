@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 mongoose.connect('',
     {
         useNewUrlParser: true,
@@ -8,10 +8,10 @@ mongoose.connect('',
         authSource: 'admin',
         retryWrites: true,
         w: 'majority'
-    });
+    })
 
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
-mongoose.set('useUnifiedTopology', true);
+mongoose.set('useNewUrlParser', true)
+mongoose.set('useFindAndModify', false)
+mongoose.set('useCreateIndex', true)
+mongoose.set('useUnifiedTopology', true)
 module.exports = mongoose

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const selectorSchema = new mongoose.Schema({
@@ -19,4 +19,4 @@ const selectorSchema = new mongoose.Schema({
 
 const Selectors = mongoose.model('selectors', selectorSchema)
 
-module.exports = Selectors;
+module.exports = Selectors

@@ -1,27 +1,52 @@
 {
-  "name": "nodebackend",
-  "version": "1.0.0",
-  "description": "\u0016Node.js Rest Apis",
+  "name": "easy-transfer",
+  "version": "0.1.0",
   "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "client": "npm start --prefix ./client && npm start --prefix client"
-  },
-  "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^7.4.2",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-prometheus-middleware": "^0.9.6",
-    "jwt-simple": "^0.5.6",
-    "moment": "^2.29.1",
-    "mongoose": "^5.11.14",
-    "multer": "^1.4.2",
-    "path": "^0.12.7",
-    "socket.io": "^3.1.0",
-    "uuid": "^8.3.0"
+    "@ant-design/icons": "^4.4.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.11.1",
+    "aos": "^2.3.4",
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-google-login": "^5.2.2",
+    "react-hot-loader": "^4.13.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-social-login-buttons": "^3.1.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "client": "react-scripts start",
+    "server": "node app.js",
+    "client-server": "react-scripts start && node app.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
