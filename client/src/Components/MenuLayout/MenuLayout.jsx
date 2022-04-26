@@ -1,10 +1,8 @@
 import React from 'react'
 import { SideMenu } from '../'
 import { useSelector } from 'react-redux'
-import { Route, Redirect } from 'react-router-dom'
 
-
-const MenuLayout = ({ component: Component, ...rest }) => {
+const MenuLayout = ({ component: Component, ...props }) => {
     const user = useSelector(state => state.authReducer.user)
 
     // if (!user) {
@@ -13,15 +11,6 @@ const MenuLayout = ({ component: Component, ...rest }) => {
     //     )
     // }
 
-    return (
-        <Route
-            {...rest}
-            render={props => <AddMenu {...props} component={Component} />}
-        />
-    )
-}
-
-const AddMenu = ({ component: Component, ...props }) => {
     return (
         <div className='helper-main'>
             {/* <Header {...props} /> */}
@@ -35,4 +24,4 @@ const AddMenu = ({ component: Component, ...props }) => {
     )
 }
 
-export { MenuLayout, AddMenu }
+export { MenuLayout }

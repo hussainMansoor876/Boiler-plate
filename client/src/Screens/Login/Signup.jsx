@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { Form, Input, Button } from 'antd'
-import { GoogleLogin } from 'react-google-login'
-import { GoogleLoginButton } from 'react-social-login-buttons'
 import { requiredMessage, inputPlace } from '../../utils/helpers'
-import { googleClientId } from '../../utils/constants'
 
 const Signup = (props) => {
     const dispatch = useDispatch()

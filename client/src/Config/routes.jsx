@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Login, Signup, Home, Settings, ForgotPassword, UpdatePassword } from '../Screens'
 import { MenuLayout } from '../Components'
 import allPaths from './paths'
@@ -21,20 +21,18 @@ const Page404 = (props) => {
     )
 }
 
-const Routes = () => {
+const AllRoutes = () => {
     return (
         <Router>
-            <Switch>
-                <Route path={allPaths.LOGIN} exact component={Login} />
-                <Route path={allPaths.SIGNUP} exact component={Signup} />
-                <Route path={allPaths.FORGOT} exact component={ForgotPassword} />
-                <Route path={allPaths.UPDATE_PASSWORD} exact component={UpdatePassword} />
-                <MenuLayout path={allPaths.HOME} exact component={Home} />
-                <MenuLayout path={allPaths.SETTINGS} exact component={Settings} />
-                <Route path='/:page404' exact component={Page404} />
-            </Switch>
+            <Routes>
+                <Route path={allPaths.LOGIN} exact element={<Login />} />
+                <Route path={allPaths.SIGNUP} exact element={<Signup />} />
+                <Route path={allPaths.SIGNUP} exact element={<Signup />} />
+                <Route path={allPaths.HOME} exact element={<MenuLayout component={Home} />} />
+                <Route path='/:page404' exact element={Page404} />
+            </Routes>
         </Router>
     )
 }
 
-export default Routes
+export default AllRoutes

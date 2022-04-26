@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { Form, Input, Button } from 'antd'
-import { GoogleLogin } from 'react-google-login'
-import { GoogleLoginButton } from 'react-social-login-buttons'
 import { requiredMessage, inputPlace } from '../../utils/helpers'
-import { googleClientId } from '../../utils/constants'
 
 const Login = (props) => {
     const dispatch = useDispatch()
@@ -17,7 +14,7 @@ const Login = (props) => {
     return (
         <div className='card-parent'>
             <div className='card'>
-                <p className='heading head-center'>Login And Transfer Money</p>
+                <p className='heading head-center'>Login</p>
                 <Form
                     name='form'
                     onFinish={onFinish}
@@ -66,17 +63,6 @@ const Login = (props) => {
                         >
                             Submit
                         </Button>
-                        <GoogleLogin
-                            clientId={googleClientId}
-                            render={renderProps => <GoogleLoginButton
-                                onClick={renderProps.onClick}
-                                className='google-login'
-                            />}
-                            onSuccess={(e) => console.log(e)}
-                            onFailure={(e) => console.log('e', e)}
-                            style={{ display: 'inline' }}
-                            cookiePolicy={'single_host_origin'}
-                        />
                         <p>Don't have an account? <Link to='/register'>Sign up</Link>
                             <br />
                             <Link to='/forgot'>Forgot Password</Link>
