@@ -38,7 +38,6 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, './client/build')))
 
-// require('./controllers')(io)
 app.use('/api', require('./routes'))
 
 //set a static folder
